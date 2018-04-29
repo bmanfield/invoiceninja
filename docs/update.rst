@@ -1,13 +1,14 @@
 Update
 ======
 
-.. NOTE:: We recommend backing up your database before updating the app.
+To update the app you need to copy over the latest code and trigger the update process.
 
-To update the app you just need to copy over the latest code. The app tracks the current version in a file called version.txt, if it notices a change it loads ``/update`` to run the database migrations.
+.. NOTE:: Back up your database and application files before completing the update.
 
-https://download.invoiceninja.com
-
-If you have trouble updating you can manually load /update to check for errors.
+1. Download the latest code from https://download.invoiceninja.com
+2. Complete a backup of your database and application directory.
+3. Extract the /ninja folder from the archive, overwriting your current /ninja install directory.
+4. Manually trigger the update by adding the "/update" switch to the end of your application URL. This will complete the update whilst checking for any errors.
 
 .. TIP:: We recommend using this `shell script <https://pastebin.com/j657uv9A>`_ to automate the update process, run it as a daily cron to automatically keep your app up to date.
 
